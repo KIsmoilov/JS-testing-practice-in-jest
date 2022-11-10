@@ -1,14 +1,8 @@
 function stringLength(string) {
-  if (typeof string !== 'string') {
-    return 'Error';
+  if (string.length >= 1 && string.length < 10) {
+    return string.length;
   }
-  const result = [...string].length;
-
-  if (result < 1 || result >= 10) {
-    throw new Error('String must be at least 1 character long and not longer than 10 characters');
-  }
-
-  return result;
+  throw new Error('String must be at least 1 character long and not longer than 10 characters');
 }
 
-module.exports = stringLength;
+export default stringLength;

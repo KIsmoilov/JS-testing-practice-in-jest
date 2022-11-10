@@ -28,6 +28,7 @@
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
